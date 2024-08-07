@@ -67,6 +67,8 @@ def main() -> None:
             input("Натисніть Enter для продовження...")
             interval = 3
 
+    # Багатопоточність дозволяє одночасно обробляти заявки і приймати нові від користувача,
+    # забезпечуючи плавну, інтерактивну роботу програми без затримок.
     stop_event: threading.Event = threading.Event()
 
     def user_input_thread() -> None:
