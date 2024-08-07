@@ -2,7 +2,7 @@ from collections import deque
 
 
 def is_palindrome(input_string: str) -> bool:
-    # Видалення пробілів та приведення до нижнього регістру
+    # Виділення із заданого рядка цифро-буквених символів та приведення їх до нижнього регістру
     cleaned_string = "".join(char.lower() for char in input_string if char.isalnum())
 
     # Створення двосторонньої черги
